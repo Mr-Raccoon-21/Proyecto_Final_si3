@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}Perfil{% endblock %}
+
+{% block content %}
+<div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header card-header-success">
+                  <h4 class="card-title">Información de la cuenta </h4>
+
+                </div>
+                <div class="card-body">
+                  <div id="speechContainer">
+                  <p></p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}

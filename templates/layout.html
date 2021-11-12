@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head  class="loggedin">
+
+
+
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='material-dashboard.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<nav class="navtop">
+			<div>
+				<h1>Proyecto final</a></h1>
+
+				<a href="{{ url_for('perfil') }}"><i class="fas fa-user-circle"></i>{{ session['username'] }}</a>
+				<a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i>Logout</a>
+
+			</div>
+		</nav>
+		<div class="content">
+
+		</div>
+
+
+
+
+
+	</head>
+	<body>
+	{% block content %}{% endblock %}
+
+
+
+
+
+
+	</body>
+</html>
