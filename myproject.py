@@ -386,6 +386,9 @@ def info():
                 cant = uii
                 if porcentaje != 0:
                     porcentaje = porcentaje / cant
+                    if porcentaje > 100:
+                        
+                        porcentaje = 100
                     porcentaje = str(porcentaje)
 
                 # candidad de palabras
